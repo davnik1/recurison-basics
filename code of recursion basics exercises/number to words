@@ -1,0 +1,23 @@
+import java.util.*;
+public class x{
+    public static void print(int n){
+        String sb []={"zero"," one","two","three","four","five","six","seven","eight","nine"};
+        {if(n==0){
+
+
+            return;
+        }
+        else
+         System.out.print( sb[n%10]+" ");
+        print (n/10);
+
+
+
+        }
+    }
+
+    public static void main(String[] args) {
+        int n=1001;
+        print(n);
+    }
+}
