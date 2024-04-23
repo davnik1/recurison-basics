@@ -1,0 +1,22 @@
+import java.util.*;
+    public class x{
+   
+      public static void stringg(int n,int lastdigit , StringBuilder sb){
+        if(n==0){
+            System.out.println(sb);
+            return;
+        }
+        if(lastdigit==0){
+            stringg(n-1, 1, sb.append("1"));
+            stringg(n-1, 0, sb.append("0"));
+
+        }
+        else if(lastdigit ==1){
+            stringg(n-1, 0, sb.append(0));
+        }
+      }
+        public static void main(String[] args) {
+            stringg(3, 1,new StringBuilder(""));
+            
+        }
+    }
